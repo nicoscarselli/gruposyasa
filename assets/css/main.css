@@ -1,27 +1,17 @@
-/**
-* Template Name: UpConstruction
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Work Sans", sans-serif;
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Inter", sans-serif;
 }
 
 /* Colors */
 :root {
-  --color-default: #364d59;
-  --color-primary: #feb900;
-  --color-secondary: #52565e;
+  --color-default: #172124;
+  --color-primary: #766C57;
+  --color-primary-light: #EEECE8;
+  --color-secondary: #172124;
+  --color-secondary-light: #DAE5E8;
 }
 
 /* Smooth scroll behavior */
@@ -44,8 +34,8 @@ a {
 }
 
 a:hover {
-  color: #ffc732;
-  text-decoration: none;
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 h1,
@@ -55,6 +45,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------
