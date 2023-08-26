@@ -45,14 +45,8 @@
       <div>
         <!-- .navbar -->
         <nav id="navbar" class="navbar">
-          <div class="header-icons">
-            <a href="#es" class="langflags"><img src="assets/img/icons/es.png"></a>
-            <a href="#en" class="langflags"><img src="assets/img/icons/en.png"></a>
-            <a href="https://www.instagram.com/grupo.syasa/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/syasa/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
-            <a href="https://www.youtube.com/@grupo_syasa" class="youtube" target="_blank"><i class="bi bi-youtube"></i></i></a>
-          </div>
-
+          <a class="langflags" href="#es" ><img src="assets/img/icons/es.png"></a>
+          <a class="langflags" href="#en" ><img src="assets/img/icons/en.png"></a>
           <a class="btn-siges" href="#">Siges</a>
 
           <!-- .Menu -->
@@ -63,11 +57,10 @@
             <span></span>
             <ul id="menu" class="align-items-center">
               <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="projectos.html">projectos</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">Nosotros</a></li>
+              <li><a href="projectos.html">Projectos</a></li>
+              <li><a href="blog.html">Noticias</a></li>
+              <li><a href="contact.html">Oportunidades Laborales</a></li>
               <li><a class="btn-siges-mobile" href="#">Siges</a></li>
             </ul>
           </div>
@@ -84,17 +77,31 @@
     <div class="overlay"></div>
 
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="assets/img/syasa_video.mp4" type="video/mp4">
+      <source src="assets/video/syasa_hero_video.mp4" type="video/mp4">
     </video>
 
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
-        <div>
+        <div class="item-1">
           <h1>Construimos el futuro</h1>
           <h2>Aplicando tecnologías más sofisticadas en materia de ingeniería y construcción</h2>
           <a href="#proyectos" class="btn btn-primary">Proyectos</a>
         </div>
+        <div class="item-2">
+          <h1>Gestionamos lo que tu proyecto requiera</h1>
+          <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dignissimos consequatur impedit sit laborum obcaecati</h2>
+        </div>
+        <div class="item-3">
+          <h1>Desarrollamos proyectos personalizados</h1>
+          <h2>ALorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dignissimos consequatur impedit sit laborum obcaecati</h2>
+        </div>
       </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/grupo.syasa/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/syasa/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></i></a>
+      <a href="https://www.youtube.com/@grupo_syasa" class="youtube" target="_blank"><i class="bi bi-youtube"></i></i></a>
     </div>
 
   </div>
@@ -140,95 +147,79 @@
     <section id="projectos" class="projectos">
       <div class="container">
 
-        <div class="section-header d-flex justify-content-lg-between justify-content-start align-items-lg-center mb-5">
-          <h2>Nuestros Proyectos</h2>
-          <a href="#proyectos" class="btn btn-primary">Ver más</a>
+        <div class="section-header justify-content-between justify-content-start mb-5">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Nuestros Proyectos</h2>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end">
+              <a href="#proyectos" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
-
-          <!-- Projectos Filters -->
-          <ul class="portfolio-flters"  data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-remodeling">Remodeling</li>
-            <li data-filter=".filter-construction">Construction</li>
-            <li data-filter=".filter-repairs">Repairs</li>
-            <li data-filter=".filter-design">Design</li>
-          </ul><!-- End projectos Filters -->
-
-          <div class="row gy-4 portfolio-container"  >
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content">
-                <img src="assets/img/projectos/1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>RESIDENCIALES</h4>
-                  <p>TOREO LIVING</p>
-                </div>
+        <div class="row gy-4 portfolio-container"  >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+            <div class="portfolio-content">
+              <img src="assets/img/projectos/1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RESIDENCIALES</h4>
+                <p>TOREO LIVING</p>
               </div>
-            </div><!-- End projectos Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content">
-                <img src="assets/img/projectos/2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>CENTROS COMERCIALES</h4>
-                  <p>CONJUNTO ERMITA</p>
-                </div>
+            </div>
+          </div><!-- End projectos Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+            <div class="portfolio-content">
+              <img src="assets/img/projectos/2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>CENTROS COMERCIALES</h4>
+                <p>CONJUNTO ERMITA</p>
               </div>
-            </div><!-- End projectos Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-              <div class="portfolio-content">
-                <img src="assets/img/projectos/3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>RESIDENCIALES</h4>
-                  <p>ARTHA OFICINA DE PRECON</p>
-                </div>
+            </div>
+          </div><!-- End projectos Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+            <div class="portfolio-content">
+              <img src="assets/img/projectos/3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>RESIDENCIALES</h4>
+                <p>ARTHA OFICINA DE PRECON</p>
               </div>
-            </div><!-- End projectos Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-              <div class="portfolio-content">
-                <img src="assets/img/projectos/4.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>BANCARIOS</h4>
-                  <p>HSBC CORPORATE BUILDING</p>
-                </div>
+            </div>
+          </div><!-- End projectos Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="portfolio-content">
+              <img src="assets/img/projectos/4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>BANCARIOS</h4>
+                <p>HSBC CORPORATE BUILDING</p>
               </div>
-            </div><!-- End projectos Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content">
-                <img src="assets/img/projectos/5.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>HOTELES</h4>
-                  <p>FAENA HOTEL & UNIVERSE</p>
-                </div>
+            </div>
+          </div><!-- End projectos Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+            <div class="portfolio-content">
+              <img src="assets/img/projectos/5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HOTELES</h4>
+                <p>FAENA HOTEL & UNIVERSE</p>
               </div>
-            </div><!-- End projectos Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content">
-                <img src="assets/img/projectos/6.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>EDIFICIOS DE VALOR PATRIMONIAL</h4>
-                  <p>LOS MOLINOS BUILDINGS & FAENA ART CENTER</p>
-                </div>
+            </div>
+          </div><!-- End projectos Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+            <div class="portfolio-content">
+              <img src="assets/img/projectos/6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>EDIFICIOS DE VALOR PATRIMONIAL</h4>
+                <p>LOS MOLINOS BUILDINGS & FAENA ART CENTER</p>
               </div>
-            </div><!-- End projectos Item -->
-
-          </div><!-- End projectos Container -->
-
+            </div>
+          </div><!-- End projectos Item -->
         </div>
-
       </div>
     </section><!-- End Projectos Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg-secondary-light">
       <div class="container" >
-
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6">
             <div class="service-item  position-relative">
@@ -297,13 +288,18 @@
     <section id="recent-blog-posts" class="recent-blog-posts">
       <div class="container">
 
-      <div class="section-header d-flex justify-content-lg-between justify-content-start align-items-lg-center mb-5">
-        <h2>Actualidad</h2>
-        <a href="#" class="btn btn-primary">Ver más</a>
+      <div class="section-header justify-content-between justify-content-start mb-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Actualidad</h2>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-end">
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
       </div>
 
       <div class="row gy-5">
-
         <div class="col-xl-4 col-md-6"  data-aos-delay="100">
           <div class="post-item position-relative h-100">
             <div class="post-img position-relative overflow-hidden">
@@ -354,11 +350,10 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
     <div class="footer-content position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 footer-links">
+          <div class="col-lg-4 footer-links">
             <h3>Argentina</h3>
             <ul>
               <li>Av. Presidente Roque Saenz Peña 628 - Piso 7, C1035AAO - C.A.B.A</li>
@@ -368,7 +363,7 @@
             </ul>
           </div><!-- End footer links column-->
 
-          <div class="col-lg-3 footer-links">
+          <div class="col-lg-4 footer-links">
             <h3>México</h3>
             <ul>
               <li>Homero 1804, Interior 1303, Col. Los Morales sección Palmas CP 11540 - Del. Miguel Hidalgo Ciudad de México</li>
@@ -377,18 +372,8 @@
             </ul>
           </div><!-- End footer links column-->
 
-          <div class="col-lg-3 footer-links">
-            <h3>Panamá</h3>
-            <ul>
-              <li>Edificio Plaza Credicorp Bank Calle 50 - 7° piso oficina 703</li>
-              <li>Tel: +52 55 2623 2554</li>
-              <li><a href="mailto:infomx@gruposyasa.com">infomx@gruposyasa.com</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-3 footer-links">
+          <div class="col-lg-4 footer-links">
             <h3>Colombia</h3>
-              
             <ul>
               <li>Cra 1 No 70-35 Ap 304, CP 110221, Bogotá</li>
               <li>Tel: Bogotá: (571) 311 831 95 15</li>
@@ -403,7 +388,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="row justify-content-between copyright">
-          <div class="col-lg-6">
+          <div class="col-lg-9">
             &copy; Copyright <strong><span>GRUPO SYASA</span></strong>. Todos los derechos reservados | <a href="#">Aviso de Privacidad</a>
           </div>
           <div class="col-lg-3">
